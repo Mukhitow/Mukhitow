@@ -1,6 +1,6 @@
-# 👨‍💻 About Me
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi+Everyone;%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB+About+Me)](https://git.io/typing-svg)
 
-Hi! I'm **[Dalil]**, an experienced **IT Infrastructure & Automation Specialist** with a broad background in **SCCM/MECM**, **Microsoft 365**, **Exchange Server**, scripting, internal tooling, and IT automation. I build stable, secure, and scalable IT environments — and I love solving non-trivial technical problems with clean and maintainable solutions.
+Hi! I'm **Dalil**, an experienced **IT Infrastructure & Automation Specialist** with a broad background in **SCCM/MECM**, **Microsoft 365**, **Exchange Server**, scripting, internal tooling, and IT automation. I build stable, secure, and scalable IT environments — and I love solving non-trivial technical problems with clean and maintainable solutions.
 
 ---
 
