@@ -1,79 +1,144 @@
-<p align="center">
-  <img src="./assets/dossier-header.svg" width="100%" alt="Mukhitow classified infrastructure dossier" />
-</p>
+<!--
+  MUKHITOW / PROFILE NODE
+  No SVG. No badges. No animated circus.
+  Pure Markdown + small HTML blocks that GitHub can render without external services.
+-->
 
-```txt
-SUBJECT          MUKHITOW.DALIL
-ROLE             ENTERPRISE SYSTEMS MANAGEMENT ENGINEER
-PRIMARY DOMAIN   ENDPOINT INFRASTRUCTURE / CONFIGURATION / AUTOMATION
-OPERATING MODE   FIX FIRST. DOCUMENT AFTER. PRETEND THIS WAS PLANNED.
-LOCATION         KAZAKHSTAN
+<div align="center">
+
+# `MUKHITOW.DALIL`
+
+<pre>
+┌──────────────────────────────────────────────────────────────┐
+│ CLASSIFIED INFRASTRUCTURE RECORD                             │
+├──────────────────────────────────────────────────────────────┤
+│ SUBJECT        Mukhitow Dalil                                │
+│ ROLE           Enterprise Systems Management Engineer         │
+│ DOMAIN         Endpoints / Config / Identity / Automation     │
+│ LOCATION       Kazakhstan                                    │
+│ MODE           Fix first. Explain after. Document if time.    │
+└──────────────────────────────────────────────────────────────┘
+</pre>
+
+</div>
+
+I work with enterprise infrastructure: the kind of environment where every temporary workaround survives long enough to become architecture.
+
+My job is to keep endpoints managed, updates predictable, reports honest, and internal systems from turning into expensive folklore.
+
+---
+
+## `whoami`
+
+```text
+name:       Mukhitow Dalil
+role:       Enterprise Systems Management Engineer
+focus:      endpoint infrastructure, configuration control, automation
+stack:      Microsoft infrastructure, SCCM, PowerShell, AD, M365, SQL, Grafana
+status:     operational
 ```
 
-I work with enterprise infrastructure: the kind of environment where every “temporary workaround” survives three reorganizations, two audits, and one poor bastard who has to make it supportable.
+---
 
-My focus is simple: keep endpoints managed, updates predictable, reports honest, and internal tooling useful enough that people stop inventing Excel-powered war crimes.
+## `/scope`
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" alt="divider" />
-</p>
-
-## /scope
-
-| Surface | What I usually touch |
+| Area | What I deal with |
 |---|---|
-| Endpoint management | SCCM / Configuration Manager, client health, collections, deployments |
-| Patch control | WSUS, ADR, rings, compliance, reboot behavior |
-| Automation | PowerShell, Python, packaging logic, boring repeatable fixes |
-| Identity-adjacent systems | Active Directory, ADFS, Entra ID, auth flows that fail with confidence |
-| Cloud operations | Microsoft 365, Exchange Online, SharePoint, OneDrive recovery paths |
-| Reporting | SQL, SSRS, Grafana, inventory, update compliance, operational dashboards |
-| Documentation | Internal wiki pages that do not read like a hostage note |
+| Endpoint management | SCCM / Configuration Manager, collections, clients, deployments |
+| Patch control | WSUS, ADR, update rings, compliance, reboot behavior |
+| Automation | PowerShell, packaging, detection logic, cleanup scripts |
+| Identity | Active Directory, ADFS, Entra-adjacent auth problems |
+| Cloud operations | Microsoft 365, Exchange Online, SharePoint, OneDrive |
+| Reporting | SQL, SSRS, Grafana, inventory, compliance dashboards |
+| Documentation | Internal wiki pages that do not insult the reader |
 
-<p align="center">
-  <img src="./assets/systems-map.svg" width="100%" alt="systems control map" />
-</p>
+---
 
-## /toolchain
+## `/toolchain`
 
-```txt
-CONFIGURATION    SCCM / MECM / WSUS / ADR / Task Sequences
-AUTOMATION       PowerShell / Python / silent installers / detection logic
-IDENTITY         Active Directory / ADFS / Entra ID / SAML / MFA
-MESSAGING        Exchange Server / Exchange Online / transport logic
-REPORTING        SQL / SSRS / Grafana / inventory data
-CLOUD            Microsoft 365 / SharePoint / OneDrive / Azure
-OPERATIONS       logs / baselines / compliance / stubbornness
+```text
+CONFIGURATION     SCCM / MECM / WSUS / ADR / Task Sequences
+AUTOMATION        PowerShell / Python / silent installers / remediation scripts
+IDENTITY          Active Directory / ADFS / Entra ID / SAML / MFA
+MESSAGING         Exchange / Exchange Online / transport logic
+REPORTING         SQL / SSRS / Grafana / operational dashboards
+CLOUD             Microsoft 365 / SharePoint / OneDrive / Azure
+OPERATIONS        logs / baselines / compliance / controlled profanity
 ```
 
-## /operational-style
+---
 
-```txt
-[01] Prefer boring systems that survive Monday.
-[02] Automate the repeatable. Document the cursed.
-[03] Treat "works on my machine" as evidence of nothing.
-[04] Read logs before performing ritual sacrifice.
-[05] Build internal tools that reduce ticket noise.
-[06] Keep the infrastructure quiet. Quiet is expensive.
+## `/operational-principles`
+
+```text
+01  Boring systems are good systems.
+02  Manual repeatable work is a bug wearing a tie.
+03  "Works on my machine" is not evidence. It is a confession.
+04  Logs first. Ritual sacrifice later.
+05  Reports must answer questions, not create decorative fog.
+06  Documentation should survive the person who wrote it.
+07  Quiet infrastructure is not luck. It is maintenance nobody noticed.
 ```
 
-## /public-components
+---
 
-| Component | Type | Current purpose |
+## `/systems-map`
+
+```text
+                 ┌────────────────────┐
+                 │  CONFIGURATION     │
+                 │  SCCM / WSUS / ADR │
+                 └─────────┬──────────┘
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+┌─────────▼─────────┐ ┌────▼─────┐ ┌────────▼────────┐
+│ ENDPOINTS         │ │ PATCHING │ │ INVENTORY        │
+│ clients / TS / SW │ │ rings    │ │ hardware / apps  │
+└─────────┬─────────┘ └────┬─────┘ └────────┬────────┘
+          │                │                │
+          └────────────────┼────────────────┘
+                           │
+                 ┌─────────▼──────────┐
+                 │ REPORTING SURFACE  │
+                 │ SQL / SSRS / UI    │
+                 └─────────┬──────────┘
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+┌─────────▼────────┐ ┌─────▼──────┐ ┌──────▼─────────┐
+│ IDENTITY         │ │ AUTOMATION │ │ DOCUMENTATION   │
+│ AD / ADFS / MFA  │ │ PS / tools │ │ wiki / runbooks │
+└──────────────────┘ └────────────┘ └────────────────┘
+```
+
+---
+
+## `/public-components`
+
+| Repository | Type | Purpose |
 |---|---:|---|
 | [`Home`](https://github.com/Mukhitow/Home) | control surface | Personal browser/homepage experiment |
 | [`MoneyFlow`](https://github.com/Mukhitow/MoneyFlow) | finance tool | Personal finance tracking interface |
-| [`Mukhitow`](https://github.com/Mukhitow/Mukhitow) | identity node | This profile, unfortunately self-aware |
+| [`Mukhitow`](https://github.com/Mukhitow/Mukhitow) | profile node | This record |
 
-## /field-notes
+---
+
+## `/field-notes`
 
 <details>
 <summary><b>Endpoint systems</b></summary>
 
-```txt
-Most endpoint problems are not mysterious.
-They are usually inventory drift, broken detection, timing, permissions,
-or someone deploying hope as a dependency.
+```text
+Most endpoint issues are not mysterious.
+
+They are usually:
+- bad detection logic
+- stale inventory
+- broken client health
+- wrong collection targeting
+- permissions doing performance art
+- timing pretending to be randomness
 ```
 
 </details>
@@ -81,9 +146,11 @@ or someone deploying hope as a dependency.
 <details>
 <summary><b>Automation</b></summary>
 
-```txt
+```text
 A good script removes work.
-A bad script creates a second incident with better formatting.
+
+A bad script creates a second incident
+with better formatting and worse rollback.
 ```
 
 </details>
@@ -91,9 +158,13 @@ A bad script creates a second incident with better formatting.
 <details>
 <summary><b>Reporting</b></summary>
 
-```txt
-Dashboards should answer questions.
-If they only create more questions, congratulations, you built decorative fog.
+```text
+A dashboard should answer what is broken,
+where it is broken,
+how badly it is broken,
+and what deserves attention first.
+
+Everything else is decorative fog with a refresh button.
 ```
 
 </details>
@@ -101,21 +172,46 @@ If they only create more questions, congratulations, you built decorative fog.
 <details>
 <summary><b>Documentation</b></summary>
 
-```txt
-Documentation is not a graveyard for screenshots.
-It is the map you wish existed before production started smoking.
+```text
+Documentation is not a screenshot landfill.
+
+It is the map you wish existed
+before production started smoking.
 ```
 
 </details>
 
-## /contact
+---
 
-```txt
-GITHUB     github.com/Mukhitow
-LINKEDIN   linkedin.com/in/mukhitow
-STATUS     available for useful engineering conversations
+## `/current-interests`
+
+```text
+- better internal tooling for IT operations
+- cleaner SCCM collection structures
+- useful compliance reporting
+- browser-based admin surfaces
+- personal dashboards that are not visual sewage
+- automation that does not require a blood oath to maintain
 ```
 
-<p align="center">
-  <img src="./assets/signature.svg" width="100%" alt="signature footer" />
-</p>
+---
+
+## `/contact`
+
+```text
+github:    github.com/Mukhitow
+linkedin:  linkedin.com/in/mukhitow
+```
+
+---
+
+<div align="center">
+
+<pre>
+┌──────────────────────────────────────────────────────────────┐
+│ END OF RECORD                                                │
+│ If everything is quiet, somebody probably did the ugly work.  │
+└──────────────────────────────────────────────────────────────┘
+</pre>
+
+</div>
