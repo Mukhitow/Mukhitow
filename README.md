@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="Mukhitow — Infrastructure, automation, endpoint control" width="100%" />
+  <img src="./hero.svg" alt="Mukhitow — Infrastructure, automation, endpoint control" width="100%" />
 </div>
 
 <br />
@@ -29,7 +29,7 @@
   </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="section divider" />
+<img src="./divider.svg" width="100%" alt="section divider" />
 
 ## Operating range
 
@@ -55,7 +55,7 @@
 </table>
 
 <div align="center">
-  <img src="./assets/rack.svg" alt="Infrastructure control rack" width="100%" />
+  <img src="./rack.svg" alt="Infrastructure control rack" width="100%" />
 </div>
 
 ## Current build
@@ -216,5 +216,5 @@ If it is neither automated nor documented, congratulations: you own a ritual.
 ```
 
 <div align="center">
-  <img src="./assets/footer.svg" alt="footer pulse" width="100%" />
+  <img src="./footer.svg" alt="footer pulse" width="100%" />
 </div>
