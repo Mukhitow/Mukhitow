@@ -1,0 +1,37 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" stroke="#D8D2C3" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="260" fill="#080909"/>
+  <rect width="1200" height="260" fill="url(#grid)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+    <text x="58" y="44" fill="#8A857B">CONTROL SURFACE</text>
+    <text x="58" y="74" fill="#D8D2C3">Endpoint Management</text>
+    <text x="58" y="105" fill="#C0903D">MECM / SCCM · OSD · ADR · WSUS · Baselines</text>
+
+    <text x="58" y="157" fill="#D8D2C3">Automation Layer</text>
+    <text x="58" y="188" fill="#C0903D">PowerShell · Python · Deployment Logic · Internal Tools</text>
+
+    <text x="618" y="74" fill="#D8D2C3">Identity & Messaging</text>
+    <text x="618" y="105" fill="#C0903D">AD · GPO · Exchange · Microsoft 365 · SharePoint</text>
+
+    <text x="618" y="157" fill="#D8D2C3">Observability</text>
+    <text x="618" y="188" fill="#C0903D">SQL Reports · Inventory · Compliance · Grafana-like dashboards</text>
+  </g>
+
+  <g stroke="#D8D2C3" stroke-opacity="0.14">
+    <rect x="40" y="24" width="520" height="100"/>
+    <rect x="40" y="136" width="520" height="82"/>
+    <rect x="600" y="24" width="560" height="100"/>
+    <rect x="600" y="136" width="560" height="82"/>
+  </g>
+
+  <g fill="#C0903D">
+    <circle cx="535" cy="47" r="4"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="535" cy="159" r="4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1134" cy="47" r="4"><animate attributeName="opacity" values="1;0.25;1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="1134" cy="159" r="4"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
