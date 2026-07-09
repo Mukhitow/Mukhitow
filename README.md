@@ -1,220 +1,121 @@
-<div align="center">
-  <img src="./hero.svg" alt="Mukhitow — Infrastructure, automation, endpoint control" width="100%" />
-</div>
-
-<br />
-
-<table width="100%">
-  <tr>
-    <td width="62%" valign="top">
-      <h2>Dalil Mukhitov</h2>
-      <p>
-        <b>Enterprise Systems Management Engineer</b><br />
-        I build, automate and stabilize corporate infrastructure: endpoints, identity, updates, messaging, deployment pipelines and the little internal tools that stop people from clicking through the same dead wizard for the 400th time.
-      </p>
-      <p>
-        My work lives somewhere between <b>Microsoft infrastructure</b>, <b>automation</b>, <b>application packaging</b>, <b>reporting</b> and <b>quietly preventing production from becoming a campfire</b>.
-      </p>
-    </td>
-    <td width="38%" valign="top">
-      <br />
-      <table width="100%">
-        <tr><td><code>STATUS</code></td><td align="right"><b>operational</b></td></tr>
-        <tr><td><code>MODE</code></td><td align="right">automation-first</td></tr>
-        <tr><td><code>DOMAIN</code></td><td align="right">enterprise systems</td></tr>
-        <tr><td><code>BIAS</code></td><td align="right">boring reliability</td></tr>
-        <tr><td><code>ENEMY</code></td><td align="right">manual routine</td></tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<img src="./divider.svg" width="100%" alt="section divider" />
-
-## Operating range
-
-<table width="100%">
-  <tr>
-    <td width="25%" valign="top">
-      <h3>Endpoint control</h3>
-      <p>MECM / SCCM, task sequences, OSD, ADR, WSUS, baselines, collections, inventory, compliance.</p>
-    </td>
-    <td width="25%" valign="top">
-      <h3>Automation</h3>
-      <p>PowerShell, Python, deployment logic, repeatable admin workflows, internal tooling, glue code.</p>
-    </td>
-    <td width="25%" valign="top">
-      <h3>Microsoft stack</h3>
-      <p>Active Directory, GPO, Exchange, Exchange Online, Microsoft 365, SharePoint, Azure-side plumbing.</p>
-    </td>
-    <td width="25%" valign="top">
-      <h3>Reporting</h3>
-      <p>SQL reports, inventory views, patch compliance, operational dashboards, ugly data made less criminal.</p>
-    </td>
-  </tr>
-</table>
-
-<div align="center">
-  <img src="./rack.svg" alt="Infrastructure control rack" width="100%" />
-</div>
-
-## Current build
-
-```txt
-┌─ identity ─────────────────────────────────────────────────────────────┐
-│ name        : Dalil Mukhitov                                           │
-│ handle      : Mukhitow                                                 │
-│ role        : Enterprise Systems Management Engineer                   │
-│ focus       : endpoint management, automation, infrastructure control  │
-│ principle   : make it stable, make it repeatable, then document it     │
-└───────────────────────────────────────────────────────────────────────┘
-```
-
-## What I actually do
-
-```powershell
-$Work = @(
-  "turn broken deployment chains into predictable workflows",
-  "package annoying applications until they behave in Software Center",
-  "build reports that show reality, not management-friendly astrology",
-  "automate user, device, software and patch operations",
-  "document systems before tribal knowledge becomes a hostage situation",
-  "connect Microsoft services without sacrificing another admin to the logs"
-)
-
-$Work | ForEach-Object { "[OK] $_" }
-```
-
-## Technical surface
-
-<table width="100%">
-  <tr>
-    <th align="left">Layer</th>
-    <th align="left">Tools / systems</th>
-    <th align="left">Typical output</th>
-  </tr>
-  <tr>
-    <td><b>Endpoint management</b></td>
-    <td>MECM / SCCM, WSUS, ADR, OSD, Task Sequences</td>
-    <td>controlled deployments, update rings, compliance baselines</td>
-  </tr>
-  <tr>
-    <td><b>Automation</b></td>
-    <td>PowerShell, Python, REST APIs, scheduled jobs</td>
-    <td>repeatable operations, admin tooling, less button-clicking misery</td>
-  </tr>
-  <tr>
-    <td><b>Identity</b></td>
-    <td>Active Directory, GPO, Entra ID / Azure AD</td>
-    <td>users, groups, policy, access, lifecycle cleanup</td>
-  </tr>
-  <tr>
-    <td><b>Messaging</b></td>
-    <td>Exchange Server, Exchange Online, mail flow</td>
-    <td>mail routing, transport rules, mailbox operations</td>
-  </tr>
-  <tr>
-    <td><b>Cloud workplace</b></td>
-    <td>Microsoft 365, SharePoint, OneDrive, Teams</td>
-    <td>service administration, permissions, recovery, governance</td>
-  </tr>
-  <tr>
-    <td><b>Packaging</b></td>
-    <td>MSI, EXE, detection scripts, silent install logic</td>
-    <td>deployable applications instead of vendor-generated punishment</td>
-  </tr>
-  <tr>
-    <td><b>Reporting</b></td>
-    <td>SQL, Report Builder, inventory data, dashboards</td>
-    <td>patch status, software inventory, device health, management visibility</td>
-  </tr>
-  <tr>
-    <td><b>Internal tools</b></td>
-    <td>HTML, CSS, JavaScript, Docker, lightweight web apps</td>
-    <td>portals, launchers, dashboards, operator-friendly interfaces</td>
-  </tr>
-</table>
-
-## Projects on the bench
-
-<table width="100%">
-  <tr>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/Mukhitow/Home">Home</a></h3>
-      <p>Browser homepage / internal control surface concept. A place for links, quick actions, dashboards and daily operator context without turning the browser into a landfill.</p>
-      <p><code>HTML</code> <code>CSS</code> <code>JavaScript</code></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/Mukhitow/MoneyFlow">MoneyFlow</a></h3>
-      <p>Personal finance / flow tracking experiment. Small, direct, browser-based tooling because sometimes Excel deserves to rest in the swamp it came from.</p>
-      <p><code>JavaScript</code> <code>PWA</code> <code>HTML</code></p>
-    </td>
-    <td width="33%" valign="top">
-      <h3><a href="https://github.com/Mukhitow/Mukhitow">Profile</a></h3>
-      <p>This repository. A controlled landing zone for identity, work surface, technical direction and visible proof that a README does not have to look like a bootcamp certificate.</p>
-      <p><code>Markdown</code> <code>SVG</code> <code>GitHub Profile</code></p>
-    </td>
-  </tr>
-</table>
-
-## The way I prefer systems
-
-```txt
-Manual checklist repeated daily     -> automation candidate
-Vendor installer with no silent mode -> packaging target
-Dashboard with no decision value     -> decorative corpse
-Undocumented critical process        -> future incident with a calendar invite
-```
-
-## Field notes
-
-<details>
-  <summary><b>Infrastructure philosophy</b></summary>
-  <br />
-  <p>
-    Reliable systems should be boring. Not weak. Not primitive. Boring.
-    Boring means the deployment runs the same way every time, the report says something useful,
-    the access model is understandable, and the next admin does not need archaeology tools to change one setting.
-  </p>
-</details>
-
-<details>
-  <summary><b>Things I like building</b></summary>
-  <br />
-  <ul>
-    <li>Deployment scripts that fail loudly instead of lying politely.</li>
-    <li>Reports that expose the real state of devices, users, updates and software.</li>
-    <li>Internal portals for support teams, operators and tired admins with too many tabs.</li>
-    <li>Task sequences and tools that turn chaos into a button with consequences.</li>
-    <li>Documentation that can survive staff turnover, amnesia and meetings.</li>
-  </ul>
-</details>
-
-<details>
-  <summary><b>Things I try not to build</b></summary>
-  <br />
-  <ul>
-    <li>One-off scripts with hardcoded corpses hidden in the middle.</li>
-    <li>Dashboards that look expensive but answer nothing.</li>
-    <li>Automation that needs more babysitting than the manual process.</li>
-    <li>Architecture diagrams that were clearly made to impress someone who never opens logs.</li>
-  </ul>
-</details>
-
-## Contact
-
-<p>
-  <a href="https://www.linkedin.com/in/mukhitow"><b>LinkedIn</b></a>
-  ·
-  <a href="https://github.com/Mukhitow"><b>GitHub</b></a>
+<p align="center">
+  <img src="./assets/dossier-header.svg" width="100%" alt="Mukhitow classified infrastructure dossier" />
 </p>
 
 ```txt
-If it can be automated, it probably should be.
-If it cannot be automated, it should at least be documented.
-If it is neither automated nor documented, congratulations: you own a ritual.
+SUBJECT          MUKHITOW.DALIL
+ROLE             ENTERPRISE SYSTEMS MANAGEMENT ENGINEER
+PRIMARY DOMAIN   ENDPOINT INFRASTRUCTURE / CONFIGURATION / AUTOMATION
+OPERATING MODE   FIX FIRST. DOCUMENT AFTER. PRETEND THIS WAS PLANNED.
+LOCATION         KAZAKHSTAN
 ```
 
-<div align="center">
-  <img src="./footer.svg" alt="footer pulse" width="100%" />
-</div>
+I work with enterprise infrastructure: the kind of environment where every “temporary workaround” survives three reorganizations, two audits, and one poor bastard who has to make it supportable.
+
+My focus is simple: keep endpoints managed, updates predictable, reports honest, and internal tooling useful enough that people stop inventing Excel-powered war crimes.
+
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" alt="divider" />
+</p>
+
+## /scope
+
+| Surface | What I usually touch |
+|---|---|
+| Endpoint management | SCCM / Configuration Manager, client health, collections, deployments |
+| Patch control | WSUS, ADR, rings, compliance, reboot behavior |
+| Automation | PowerShell, Python, packaging logic, boring repeatable fixes |
+| Identity-adjacent systems | Active Directory, ADFS, Entra ID, auth flows that fail with confidence |
+| Cloud operations | Microsoft 365, Exchange Online, SharePoint, OneDrive recovery paths |
+| Reporting | SQL, SSRS, Grafana, inventory, update compliance, operational dashboards |
+| Documentation | Internal wiki pages that do not read like a hostage note |
+
+<p align="center">
+  <img src="./assets/systems-map.svg" width="100%" alt="systems control map" />
+</p>
+
+## /toolchain
+
+```txt
+CONFIGURATION    SCCM / MECM / WSUS / ADR / Task Sequences
+AUTOMATION       PowerShell / Python / silent installers / detection logic
+IDENTITY         Active Directory / ADFS / Entra ID / SAML / MFA
+MESSAGING        Exchange Server / Exchange Online / transport logic
+REPORTING        SQL / SSRS / Grafana / inventory data
+CLOUD            Microsoft 365 / SharePoint / OneDrive / Azure
+OPERATIONS       logs / baselines / compliance / stubbornness
+```
+
+## /operational-style
+
+```txt
+[01] Prefer boring systems that survive Monday.
+[02] Automate the repeatable. Document the cursed.
+[03] Treat "works on my machine" as evidence of nothing.
+[04] Read logs before performing ritual sacrifice.
+[05] Build internal tools that reduce ticket noise.
+[06] Keep the infrastructure quiet. Quiet is expensive.
+```
+
+## /public-components
+
+| Component | Type | Current purpose |
+|---|---:|---|
+| [`Home`](https://github.com/Mukhitow/Home) | control surface | Personal browser/homepage experiment |
+| [`MoneyFlow`](https://github.com/Mukhitow/MoneyFlow) | finance tool | Personal finance tracking interface |
+| [`Mukhitow`](https://github.com/Mukhitow/Mukhitow) | identity node | This profile, unfortunately self-aware |
+
+## /field-notes
+
+<details>
+<summary><b>Endpoint systems</b></summary>
+
+```txt
+Most endpoint problems are not mysterious.
+They are usually inventory drift, broken detection, timing, permissions,
+or someone deploying hope as a dependency.
+```
+
+</details>
+
+<details>
+<summary><b>Automation</b></summary>
+
+```txt
+A good script removes work.
+A bad script creates a second incident with better formatting.
+```
+
+</details>
+
+<details>
+<summary><b>Reporting</b></summary>
+
+```txt
+Dashboards should answer questions.
+If they only create more questions, congratulations, you built decorative fog.
+```
+
+</details>
+
+<details>
+<summary><b>Documentation</b></summary>
+
+```txt
+Documentation is not a graveyard for screenshots.
+It is the map you wish existed before production started smoking.
+```
+
+</details>
+
+## /contact
+
+```txt
+GITHUB     github.com/Mukhitow
+LINKEDIN   linkedin.com/in/mukhitow
+STATUS     available for useful engineering conversations
+```
+
+<p align="center">
+  <img src="./assets/signature.svg" width="100%" alt="signature footer" />
+</p>
