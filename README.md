@@ -1,217 +1,358 @@
 <!--
-  MUKHITOW / PROFILE NODE
-  No SVG. No badges. No animated circus.
-  Pure Markdown + small HTML blocks that GitHub can render without external services.
+  Mukhitow profile README
+  Single-file edition. No external images. No generated badge circus.
 -->
 
 <div align="center">
 
-# `MUKHITOW.DALIL`
-
 <pre>
-┌──────────────────────────────────────────────────────────────┐
-│ CLASSIFIED INFRASTRUCTURE RECORD                             │
-├──────────────────────────────────────────────────────────────┤
-│ SUBJECT        Mukhitow Dalil                                │
-│ ROLE           Enterprise Systems Management Engineer         │
-│ DOMAIN         Endpoints / Config / Identity / Automation     │
-│ LOCATION       Kazakhstan                                    │
-│ MODE           Fix first. Explain after. Document if time.    │
-└──────────────────────────────────────────────────────────────┘
+███╗   ███╗██╗   ██╗██╗  ██╗██╗  ██╗██╗████████╗ ██████╗ ██╗    ██╗
+████╗ ████║██║   ██║██║ ██╔╝██║  ██║██║╚══██╔══╝██╔═══██╗██║    ██║
+██╔████╔██║██║   ██║█████╔╝ ███████║██║   ██║   ██║   ██║██║ █╗ ██║
+██║╚██╔╝██║██║   ██║██╔═██╗ ██╔══██║██║   ██║   ██║   ██║██║███╗██║
+██║ ╚═╝ ██║╚██████╔╝██║  ██╗██║  ██║██║   ██║   ╚██████╔╝╚███╔███╔╝
+╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝  ╚══╝╚══╝
 </pre>
+
+### Enterprise Systems Management Engineer
+
+`endpoint management` · `automation` · `windows infrastructure` · `internal tooling` · `controlled chaos`
 
 </div>
 
-I work with enterprise infrastructure: the kind of environment where every temporary workaround survives long enough to become architecture.
-
-My job is to keep endpoints managed, updates predictable, reports honest, and internal systems from turning into expensive folklore.
-
 ---
 
-## `whoami`
+<table>
+<tr>
+<td width="58%" valign="top">
 
-```text
-name:       Mukhitow Dalil
-role:       Enterprise Systems Management Engineer
-focus:      endpoint infrastructure, configuration control, automation
-stack:      Microsoft infrastructure, SCCM, PowerShell, AD, M365, SQL, Grafana
-status:     operational
+```console
+C:\infra> whoami /profile
+
+User        : Mukhitov Dalil
+Handle      : Mukhitow
+Role        : Enterprise Systems Management Engineer
+Mode        : calm until production starts screaming
+Speciality  : making enterprise systems less embarrassing
+
+C:\infra> status
+
+[OK] endpoint management
+[OK] automation
+[OK] packaging weird software nobody documented
+[OK] mail / identity / Microsoft 365 pain management
+[OK] reports that expose ugly truth instead of hiding it
+[!!] vendor documentation quality remains a public health issue
 ```
 
+</td>
+<td width="42%" valign="top">
+
+### What this place is
+
+Not a trophy wall. Not a LinkedIn motivational landfill.  
+This is a small public window into the kind of work that usually lives behind VPNs, ticket systems, broken portals, and change requests written like ancient curses.
+
+I work around enterprise infrastructure, endpoint management, automation, internal tools, and the special category of software that technically exists but should probably apologize.
+
+</td>
+</tr>
+</table>
+
 ---
 
-## `/scope`
+## Operating area
 
-| Area | What I deal with |
+<table>
+<tr>
+<td valign="top" width="33%">
+
+### Endpoint control
+
+- Microsoft Configuration Manager / MECM / SCCM
+- WSUS, ADR, update rings
+- Task Sequences and OSD
+- Compliance baselines
+- Hardware and software inventory
+- Deployment logic that does not die on first contact with reality
+
+</td>
+<td valign="top" width="33%">
+
+### Infrastructure
+
+- Active Directory
+- Group Policy
+- DNS / DHCP
+- Windows Server
+- Microsoft 365 / Exchange Online
+- SharePoint / OneDrive administration
+- Identity, access, mail flow, and all the other quiet disasters
+
+</td>
+<td valign="top" width="33%">
+
+### Automation & tooling
+
+- PowerShell first
+- Python when PowerShell starts looking like a hostage note
+- SQL for reports
+- Docker for internal services
+- HTML / CSS / JS for tools people can actually use
+- Grafana / Report Builder dashboards
+
+</td>
+</tr>
+</table>
+
+---
+
+## Command palette
+
+| Command | Output |
 |---|---|
-| Endpoint management | SCCM / Configuration Manager, collections, clients, deployments |
-| Patch control | WSUS, ADR, update rings, compliance, reboot behavior |
-| Automation | PowerShell, packaging, detection logic, cleanup scripts |
-| Identity | Active Directory, ADFS, Entra-adjacent auth problems |
-| Cloud operations | Microsoft 365, Exchange Online, SharePoint, OneDrive |
-| Reporting | SQL, SSRS, Grafana, inventory, compliance dashboards |
-| Documentation | Internal wiki pages that do not insult the reader |
+| `profile --short` | Infrastructure engineer focused on endpoint management, automation, and internal tooling. |
+| `stack --core` | SCCM, PowerShell, AD, GPO, WSUS, Microsoft 365, Exchange, SQL, Docker. |
+| `mode --default` | Fix the system, document the fix, automate the next failure. |
+| `debug --style` | Logs first. Assumptions later. Panic never helped a dead service. |
+| `docs --philosophy` | If nobody can repeat the fix, it was not fixed. It was a ritual. |
+| `meetings --filter` | Reject vague noise. Accept clear problems, owners, dates, rollback plans. |
 
 ---
 
-## `/toolchain`
+## Architecture map
 
-```text
-CONFIGURATION     SCCM / MECM / WSUS / ADR / Task Sequences
-AUTOMATION        PowerShell / Python / silent installers / remediation scripts
-IDENTITY          Active Directory / ADFS / Entra ID / SAML / MFA
-MESSAGING         Exchange / Exchange Online / transport logic
-REPORTING         SQL / SSRS / Grafana / operational dashboards
-CLOUD             Microsoft 365 / SharePoint / OneDrive / Azure
-OPERATIONS        logs / baselines / compliance / controlled profanity
+```mermaid
+flowchart LR
+    USER[User impact] --> TICKET[Ticket / signal]
+    TICKET --> TRIAGE[Technical triage]
+    TRIAGE --> ROOT[Root cause]
+    ROOT --> FIX[Fix]
+    FIX --> AUTO[Automation]
+    AUTO --> REPORT[Report / dashboard]
+    REPORT --> DOCS[Documentation]
+    DOCS --> LESSPAIN[Less repeated pain]
+
+    AD[Active Directory] --> TRIAGE
+    SCCM[SCCM / MECM] --> FIX
+    M365[Microsoft 365] --> TRIAGE
+    SQL[SQL reporting] --> REPORT
+    PS[PowerShell] --> AUTO
 ```
 
 ---
 
-## `/operational-principles`
+## Things I usually build
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Useful internal crap
+
+- Admin dashboards
+- Software catalog views
+- Update compliance reports
+- Device cleanup tools
+- Deployment helpers
+- Inventory views
+- Small web apps that replace Excel necromancy
+
+</td>
+<td width="50%" valign="top">
+
+### Operational scripts
+
+- User and device maintenance
+- Detection methods
+- Silent install / uninstall flows
+- Exchange and Microsoft 365 checks
+- AD cleanup routines
+- Report data extraction
+- Logs collection without making humans suffer more than legally required
+
+</td>
+</tr>
+</table>
+
+---
+
+## Public repositories
+
+| Repository | Purpose |
+|---|---|
+| [`Home`](https://github.com/Mukhitow/Home) | Personal / internal homepage experiments. One clean entry point instead of browser tab landfill. |
+| [`MoneyFlow`](https://github.com/Mukhitow/MoneyFlow) | Finance flow tracking experiment. Because money also deserves logs before it disappears. |
+| [`Mukhitow`](https://github.com/Mukhitow/Mukhitow) | This profile. The front door. Try not to trip over the cables. |
+
+---
+
+## Working principles
 
 ```text
-01  Boring systems are good systems.
-02  Manual repeatable work is a bug wearing a tie.
-03  "Works on my machine" is not evidence. It is a confession.
-04  Logs first. Ritual sacrifice later.
-05  Reports must answer questions, not create decorative fog.
-06  Documentation should survive the person who wrote it.
-07  Quiet infrastructure is not luck. It is maintenance nobody noticed.
+01. Production does not care about beautiful theories.
+02. If the rollback plan is "we will see", the plan is garbage.
+03. Dashboards must answer questions, not decorate walls.
+04. Automation without logging is just faster chaos.
+05. Documentation must survive the person who wrote it.
+06. A deployment is not successful until detection proves it.
+07. The best tool is the one people actually use after you leave the room.
 ```
 
 ---
 
-## `/systems-map`
+## Toolchain, without perfume
 
-```text
-                 ┌────────────────────┐
-                 │  CONFIGURATION     │
-                 │  SCCM / WSUS / ADR │
-                 └─────────┬──────────┘
-                           │
-          ┌────────────────┼────────────────┐
-          │                │                │
-┌─────────▼─────────┐ ┌────▼─────┐ ┌────────▼────────┐
-│ ENDPOINTS         │ │ PATCHING │ │ INVENTORY        │
-│ clients / TS / SW │ │ rings    │ │ hardware / apps  │
-└─────────┬─────────┘ └────┬─────┘ └────────┬────────┘
-          │                │                │
-          └────────────────┼────────────────┘
-                           │
-                 ┌─────────▼──────────┐
-                 │ REPORTING SURFACE  │
-                 │ SQL / SSRS / UI    │
-                 └─────────┬──────────┘
-                           │
-          ┌────────────────┼────────────────┐
-          │                │                │
-┌─────────▼────────┐ ┌─────▼──────┐ ┌──────▼─────────┐
-│ IDENTITY         │ │ AUTOMATION │ │ DOCUMENTATION   │
-│ AD / ADFS / MFA  │ │ PS / tools │ │ wiki / runbooks │
-└──────────────────┘ └────────────┘ └────────────────┘
-```
+<table>
+<tr>
+<td valign="top" width="25%">
+
+**Management**
+
+`SCCM`  
+`MECM`  
+`WSUS`  
+`Intune logic`  
+`Task Sequences`
+
+</td>
+<td valign="top" width="25%">
+
+**Automation**
+
+`PowerShell`  
+`Python`  
+`SQL`  
+`REST APIs`  
+`scheduled jobs`
+
+</td>
+<td valign="top" width="25%">
+
+**Microsoft stack**
+
+`AD`  
+`GPO`  
+`Exchange`  
+`Microsoft 365`  
+`SharePoint`
+
+</td>
+<td valign="top" width="25%">
+
+**Tools**
+
+`Docker`  
+`IIS`  
+`Grafana`  
+`Report Builder`  
+`Git`
+
+</td>
+</tr>
+</table>
 
 ---
-
-## `/public-components`
-
-| Repository | Type | Purpose |
-|---|---:|---|
-| [`Home`](https://github.com/Mukhitow/Home) | control surface | Personal browser/homepage experiment |
-| [`MoneyFlow`](https://github.com/Mukhitow/MoneyFlow) | finance tool | Personal finance tracking interface |
-| [`Mukhitow`](https://github.com/Mukhitow/Mukhitow) | profile node | This record |
-
----
-
-## `/field-notes`
 
 <details>
-<summary><b>Endpoint systems</b></summary>
+<summary><b>Field notes</b></summary>
+
+<br>
 
 ```text
-Most endpoint issues are not mysterious.
+Enterprise IT is mostly archaeology.
+You dig through logs, old policies, forgotten scripts, mystery GPOs,
+registry leftovers, dead documentation, and vendor installers that behave
+like they were assembled during a fire drill.
 
-They are usually:
-- bad detection logic
-- stale inventory
-- broken client health
-- wrong collection targeting
-- permissions doing performance art
-- timing pretending to be randomness
+The trick is not to look heroic.
+The trick is to make the next incident boring.
 ```
 
 </details>
 
 <details>
-<summary><b>Automation</b></summary>
+<summary><b>What I avoid</b></summary>
 
-```text
-A good script removes work.
+<br>
 
-A bad script creates a second incident
-with better formatting and worse rollback.
-```
-
-</details>
-
-<details>
-<summary><b>Reporting</b></summary>
-
-```text
-A dashboard should answer what is broken,
-where it is broken,
-how badly it is broken,
-and what deserves attention first.
-
-Everything else is decorative fog with a refresh button.
-```
+- Fake productivity theater
+- Dashboards with no operational value
+- Scripts that only work on the author's laptop
+- Documentation that says "just run the tool" and then dies
+- Manual processes pretending to be governance
+- Vendor defaults accepted as religion
 
 </details>
 
 <details>
-<summary><b>Documentation</b></summary>
+<summary><b>What I respect</b></summary>
 
-```text
-Documentation is not a screenshot landfill.
+<br>
 
-It is the map you wish existed
-before production started smoking.
-```
+- Clear ownership
+- Reversible changes
+- Small tools that remove repeated pain
+- Logs that tell the truth
+- Boring infrastructure
+- People who test before touching production like civilized animals
 
 </details>
 
 ---
 
-## `/current-interests`
+## Current direction
 
-```text
-- better internal tooling for IT operations
-- cleaner SCCM collection structures
-- useful compliance reporting
-- browser-based admin surfaces
-- personal dashboards that are not visual sewage
-- automation that does not require a blood oath to maintain
+```console
+C:\projects> tree /focus
+
+.
+├── endpoint-management
+│   ├── update-rings
+│   ├── application-packaging
+│   ├── compliance-baselines
+│   └── reporting
+│
+├── internal-tools
+│   ├── homepage
+│   ├── dashboards
+│   ├── admin-portals
+│   └── automation-ui
+│
+└── documentation
+    ├── runbooks
+    ├── recovery-guides
+    ├── operational-standards
+    └── diagrams-that-do-not-insult-the-reader
 ```
 
 ---
 
-## `/contact`
+## Contact
 
-```text
-github:    github.com/Mukhitow
-linkedin:  linkedin.com/in/mukhitow
-```
+<table>
+<tr>
+<td width="70%">
+
+For infrastructure, automation, internal tooling, endpoint management, or strange enterprise systems that need adult supervision.
+
+</td>
+<td align="right" width="30%">
+
+[`LinkedIn`](https://linkedin.com/in/mukhitow) · [`GitHub`](https://github.com/Mukhitow)
+
+</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-<pre>
-┌──────────────────────────────────────────────────────────────┐
-│ END OF RECORD                                                │
-│ If everything is quiet, somebody probably did the ugly work.  │
-└──────────────────────────────────────────────────────────────┘
-</pre>
+```text
+stable systems > loud promises
+clean rollback > heroic recovery
+boring operations > dramatic outages
+```
 
 </div>
